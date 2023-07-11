@@ -1,7 +1,17 @@
+.pictureContainer{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
 img{
     width: 250px;
     height: 350px;
-    border-radius: 20px;    
+    border-radius: 20px;
+    transition: all 0.5s;    
+}
+
+img:hover{
+    scale: 1.1;
 }
 
 h3{
