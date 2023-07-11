@@ -1,20 +1,25 @@
-import Picture from "../components/Picture"
+import Picture from "../components/Picture";
+import "./homepage.css";
 
-
-const Homepage = ({data}) => {
-    
-    
+const Homepage = ({ data }) => {
   return (
-    <div className="container">
-        <h1>Image Gallery</h1>
-
-       {data.map((item,i)=>(
-        <Picture key={i} photographer={item.photographer} img={item.src.large}/>
+    <>
+        <div style={{textAlign:"center"}}>
+            <h1>Image Gallery</h1>
+        </div>
+      <div className="container">
         
-       ))}
-        
-    </div>
-  )
-}
 
-export default Homepage
+        {data.map((item, i) => (
+          <Picture
+            key={i}
+            photographer={item.photographer}
+            img={item.src.large}
+          />
+        ))}
+      </div>
+    </>
+  );
+};
+
+export default Homepage;

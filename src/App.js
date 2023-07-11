@@ -1,5 +1,6 @@
 import Homepage from "./pages/Homepage";
 import data from "./helper/data";
+import "./app.css"
 
 function App() {
   return (

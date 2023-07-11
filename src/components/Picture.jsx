@@ -1,4 +1,4 @@
-
+import "./picture.css"
 
 const Picture = ({img,photographer}) => {
   return (
